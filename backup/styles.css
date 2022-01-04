@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, serif;
+}
+
+h1 {
+    color: dimgrey;
+    margin-bottom: 15px;
+}
+
+body {
+    text-align: center;
+}
+
+.results {
+    margin: auto;
+    max-width: 700px;
+    min-height: 200px;
+    background-color: #c8dcf7;
+    padding: 3px;
+    border-style: solid;
+    border-color: saddlebrown;
+    text-align: center;
+}
+
+.alert {
+    color: darkred;
+}
+
+.highlight {
+    text-decoration: underline;
+    background-color: yellow;
+}
