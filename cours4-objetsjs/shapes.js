@@ -66,29 +66,29 @@ var c = new Circle(20, 30, 5);
 var e = new Ellipse(5, 10, 5, 2);
 
 
-document.writeln( "Point p = " + p );
-document.writeln( "p's area = " + p.area() );
+console.log( "Point p = " + p );
+console.log( "p's area = " + p.area() );
 
 console.log( Object.getPrototypeOf(p) );
 console.log( "p instanceof Point = " + (p instanceof Point) );
 console.log( "p instanceof Object = " + (p instanceof Object) );
 
-document.writeln( "Circle c = " + c );
-document.writeln( "c's area = " + c.area() );
+console.log( "Circle c = " + c );
+console.log( "c's area = " + c.area() );
 console.log( Object.getPrototypeOf(c) );
 console.log( "p instanceof Circle = " + (p instanceof Circle) );
 console.log( "c instanceof Point = " + (c instanceof Point) );
 
 
-document.writeln( "Ellipse e = " + e );
-document.writeln( "e's area = " + e.area() );
+console.log( "Ellipse e = " + e );
+console.log( "e's area = " + e.area() );
 console.log( Object.getPrototypeOf(e) );
 console.log( "e instanceof Ellipse = " + (e instanceof Ellipse) );
 console.log( "e instanceof Circle = " + (e instanceof Circle) );
 console.log( "e instanceof Point = " + (e instanceof Point) );
 
 delete e.area;  // Now this reverts to circle's area
-document.writeln( "e's area (wrong!) = " + e.area() );
+console.log( "e's area (wrong!) = " + e.area() );
 
 console.log( "p's properties " + iterateOverProperties(p) );
 console.log( "c's properties " + iterateOverProperties(c) );

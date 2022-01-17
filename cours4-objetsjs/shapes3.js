@@ -1,5 +1,8 @@
 /*
-Cet exemple montre comment construire une hiérarchie d'objets au moyen des éléments de syntaxe ES6+. Bien que la syntaxe ressemble aux classes traditionnelles (ex., en Java), les concepts sous-jacents sont toujours basés sur le modèle prototypal de JavaScript.
+Cet exemple montre comment construire une hiérarchie d'objets au
+moyen des éléments de syntaxe ES6+. Bien que la syntaxe ressemble aux classes
+traditionnelles (ex., en Java), les concepts sous-jacents sont toujours basés
+sur le modèle prototypal de JavaScript.
 
 Se référer aux notions théoriques décrites dans les acétates du cours.
 */
