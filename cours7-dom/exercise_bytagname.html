@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personnages de Peanuts</title>
+</head>
+<body>
+<h1>Snoopy</h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/5/53/Snoopy_Peanuts.png"></p>
+<h1>Charlie Brown</h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/2/22/Charlie_Brown.png"></p>
+<h1>Marcie Johnson</h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/2/24/Marcie_from_Peanuts.png"></p>
+
+<script>
+  const byTagName = (node, str) => {
+    let nodes = [];
+    let tag = str.toUpperCase();
+
+    function findElements(node) {
+      for (let i = 0; i < node.childNodes.length; i++) {
+        let child = node.childNodes[i];
+        if (child.nodeType == Node.ELEMENT_NODE && child.nodeName == tag) {
+          nodes.push(child);
+        }
+        findElements(child);
+      }
+    }
+
+    findElements(node);
+    return nodes;
+  }
+
+  let elems = byTagName(document, "img");
+  console.log("Elements : " + elems);
+</script>
+
+</body>
+</html>

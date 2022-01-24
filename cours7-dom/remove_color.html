@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sélectionner et supprimer une coleur</title>
+</head>
+<body>
+<select id="color">
+  <option>Rouge</option>
+  <option>Bleu</option>
+  <option>Jaune</option>
+  <option>Vert</option>
+  <option>Blanc</option>
+  <option>Rose</option>
+  <option>Noire</option>
+</select>
+
+<script>
+  function removeColor() {
+    let s = document.getElementById("color");
+    s.remove(s.selectedIndex);
+  }
+</script>
+<input type="button" onclick="removeColor()" value="Sélectionner et supprimer">
+</body>
+</html>
