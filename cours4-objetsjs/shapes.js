@@ -1,5 +1,7 @@
 /*
-Cet exemple montre comment construire une hiérarchie d'objets définis par une fonction constructeur, par l'enchaînement des prototypes. Se référer aux les notions théoriques décrites dans les acétates du cours.
+Cet exemple montre comment construire une hiérarchie d'objets définis
+par une fonction constructeur, par l'enchaînement des prototypes. Se
+référer aux les notions théoriques décrites dans les acétates du cours.
 */
 
 var Point = function (x, y) {

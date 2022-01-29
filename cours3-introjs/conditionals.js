@@ -29,6 +29,12 @@ function isBetween(value, min, max) {
     return ( (value >= min) && (value <= max) );
 }
 
+function isBetween2(value, min, max) {
+    return (max >= value >= min);
+}
+
+console.log("Between: " + isBetween2(2,10, 15))
+
 console.log( isBetween( 10, 5, 15) ); // true
 console.log( isBetween( 10, 5, 8 ) ); // false
 

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sérialisation JSON</title>
+</head>
+<body>
+<h2>Créer une chaine JSON à partir d'un objet</h2>
+<p id="content"></p>
+
+<script>
+  let obj = {name:"Marie", age:30, city:"Montreal"};
+  document.getElementById("content").innerHTML = JSON.stringify(obj);
+</script>
+</body>
+</html>

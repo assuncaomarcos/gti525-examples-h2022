@@ -34,7 +34,6 @@ var Point = {
     }
 }; 
 
-
 var Circle = Object.create(Point);
 Circle.init = function(x, y, r) {
 	Point.init.call(this, x, y);

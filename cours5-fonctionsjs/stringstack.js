@@ -21,7 +21,8 @@ var vals = myStack.values; // vals contient [tr1]
 // Comment pourriez-vous réécrire le code StringStack afin que l'attribut privé values soit encapsulé, c'est-à-dire inaccessible de l'extérieur? Vous devez utiliser les fermetures comme nous avons vu en classe. Votre code devrait être compatible avec l'invocation suivante:
 
 var myStack = StringStack(); // pas de new ici
-myStack.push("str1"); myStack.push("str2");
+myStack.push("str1");
+myStack.push("str2");
 myStack.pop(); // retourne "str2"
 var vals = myStack.values; // vals est undefined: puisque cet attribut n'est pas accessible de l'extérieur
 

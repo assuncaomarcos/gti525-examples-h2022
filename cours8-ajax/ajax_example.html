@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Exemple XmlHttpRequest</title>
 </head>
 <body>
-$END$
+<script>
+    function loadContent() {
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            if (this.status == 200) {
+                document.getElementById("content").innerHTML = this.responseText;
+            }
+        }
+        xhr.open("GET", "document.txt");
+        xhr.send();
+    }
+</script>
+
+<h1>Exemple XMLHttpRequest</h1>
+<div id="content"> </div>
+<button type="button" onclick="loadContent()">Charger le contenu</button>
+
 </body>
 </html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Désérialisation JSON</title>
+</head>
+<body>
+<h2>Créer un objet à partir d'une chaîne JSON</h2>
+<p id="content"></p>
+
+<script>
+  let json = '{"name":"Marie", "age":30, "city":"Montreal"}';
+  let obj = JSON.parse(json);
+  document.getElementById("content").innerHTML = obj.name + ", " + obj.age + ", " + obj.city;
+</script>
+</body>
+</html>
