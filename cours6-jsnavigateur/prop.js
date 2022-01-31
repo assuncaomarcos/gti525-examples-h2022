@@ -1,6 +1,6 @@
 // 2. Si vous souhaitez inhiber la propagation des événements dans la phase bubble après div3, comment pourriez-vous le faire?
 
-var bubbleHandler = function(name) {
+const bubbleHandler = function(name) {
 	return function(e) {
 	    console.log("Bubble handle invoked on : " + name);
 		console.log("Event target " + e.target);
@@ -10,14 +10,14 @@ var bubbleHandler = function(name) {
 	};
 };
 
-var bubbleHandler2 = function(name) {
+const bubbleHandler2 = function(name) {
 	return function(e) {
 	    console.log("Bubble handler2 invoked on : " + name);
 		console.log("Event target " + e.target);
 	};
 };
 
-var captureHandler = function(name) {
+const captureHandler = function(name) {
 	return function(e) {
 	    console.log("Capture handle invoked on : " + name);
 	    console.log("Event target " + e.target);
@@ -26,11 +26,11 @@ var captureHandler = function(name) {
 }
 
 window.onload = function() {
-	var div1 = document.getElementById("one");
-	var div2 = document.getElementById("two");
-	var div3 = document.getElementById("three");
-	var div4 = document.getElementById("four");
-	var btn = document.getElementById("btn");
+	let div1 = document.getElementById("one");
+	let div2 = document.getElementById("two");
+	let div3 = document.getElementById("three");
+	let div4 = document.getElementById("four");
+	let btn = document.getElementById("btn");
 
 	div1.addEventListener("click", bubbleHandler("div1"), false);
 	div2.addEventListener("click", bubbleHandler("div2"), false);
