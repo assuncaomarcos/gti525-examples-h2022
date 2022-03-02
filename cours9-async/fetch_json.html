@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple promesse fetchJSON</title>
+</head>
+<body>
+<div id="content"></div>
+<script>
+  function fetchJSON(url) {
+    return new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.responseType = 'json';
+      xhr.open('GET', url);
+      xhr.onload = () => resolve(xhr.response);
+      xhr.onerror = () => reject(xhr.statusText);
+      xhr.send();
+    });
+  }
+
+  const url = 'https://fakerapi.it/api/v1/images?_quantity=1&_type=nature&_height=300';
+
+  fetchJSON(url)
+          .then(data => {
+              if (data.code != 200) {
+                  console.log(data.status);
+              } else {
+                data.data.forEach( item => {
+                let img = document.createElement("img");
+                img.src = item.url;
+                document.getElementById('content').append(img);
+              });
+            }
+            console.log(data);
+          });
+</script>
+</body>
+</html>

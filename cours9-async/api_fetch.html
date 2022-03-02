@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple API fetch</title>
+</head>
+<body>
+<div id="content"></div>
+
+<script>
+  const url = 'https://upload.wikimedia.org/wikipedia/en/9/9d/Franklin_(Peanuts).png';
+
+  fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Erreur HTTP: ${response.status}`);
+            } else {
+              return response.blob();
+            }
+          })
+          .then(blob => {
+            const objectURL = URL.createObjectURL(blob);
+            const img = document.createElement("img");
+            img.src = objectURL;
+            document.getElementById("content").append(img);
+          })
+          .catch(e => {
+            console.log(`Problème avec l'opération de récupération : ${e.message}`);
+          });
+</script>
+</body>
+</html>
