@@ -1,6 +1,6 @@
 id,title,release_date,box_office,distributor,game_publisher
 1,Super Mario Bros.,1993-05-28,38912465.00,Buena Vista Pictures Distribution,Nintendo
-2,Double Dragon,1994-11-04,4152699.00,Gramercy Pictures,Technōs Japan
+2,Double Dragon,1994-11-04,4152699.00,Gramercy Pictures,Technos Japan
 3,Street Fighter,1994-12-23,99423521.00,Universal Pictures,Capcom
 4,Mortal Kombat,1995-08-18,124741822.00,New Line Cinema,Midway
 5,Mortal Kombat: Annihilation,1997-11-21,51376861.00,New Line Cinema,Midway
@@ -35,7 +35,7 @@ id,title,release_date,box_office,distributor,game_publisher
 34,Tomb Raider,2018-03-16,274650803.00,Warner Bros. Pictures,Square Enix
 35,Rampage,2018-04-13,428028233.00,Warner Bros. Pictures,WB Games
 36,Dead Trigger,2019-05-03,151493.00,Saban Films,Madfinger Games
-37,Detective Pikachu,2019-05-10,433005346.00,Warner Bros. Pictures,NintendoThe Pokémon Company
+37,Detective Pikachu,2019-05-10,433005346.00,Warner Bros. Pictures,NintendoThe Pokemon Company
 38,Sonic the Hedgehog,2020-02-14,320954026.00,Paramount Pictures,Sega Sammy
 39,Monster Hunter,2020-12-18,42145959.00,Sony Pictures Releasing,Capcom
 40,Mortal Kombat,2021-04-23,83601013.00,Warner Bros. Pictures,WB Games
