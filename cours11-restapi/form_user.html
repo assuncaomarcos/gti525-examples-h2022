@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemple pour creer un utilisateur</title>
+  <style>
+    form.form-user { display: table; }
+    div.form-user { display: table-row; }
+    label, input, select { display: table-cell; margin-bottom: 10px; }
+    label { padding-right: 10px; }
+  </style>
+</head>
+<body>
+<form action="/users" class="form-user" id="form-user">
+  <div class="form-user">
+    <label for="lastname">Nom: </label>
+    <input type="text" name="lastname" id="lastname" placeholder="Nom" required>
+  </div>
+  <div class="form-user">
+    <label for="firstname">Prénom: </label>
+    <input type="text" name="firstname" id="firstname" placeholder="Prénom" required>
+  </div>
+  <div class="form-user">
+    <label for="address">Adresse: </label>
+    <input type="text" name="address" id="address" placeholder="Adresse" required>
+  </div>
+  <div class="form-user">
+    <label for="city">Ville: </label>
+    <input type="text" name="city" id="city" placeholder="Ville" required>
+  </div>
+  <div class="form-user">
+    <label for="province">Province: </label>
+    <select id="province" name="province" placeholder="Province" required>
+      <option>Alberta</option>
+      <option>Colombie-Britannique</option>
+      <option>Île-du-Prince-Édouard</option>
+      <option>Manitoba</option>
+      <option>Nouveau-Brunswick</option>
+      <option>Nouvelle-Écosse</option>
+      <option>Ontario</option>
+      <option>Québec</option>
+      <option>Saskatchewan</option>
+      <option>Terre-Neuve-et-Labrador</option>
+  </select>
+  </div>
+    <div class="form-user">
+      <label for="phone">Téléphone: </label>
+      <input type="text" name="phone" id="phone" placeholder="Téléphone" required>
+    </div>
+  <div class="form-user">
+    <input type="submit" value="Soumettre">
+  </div>
+</form>
+
+<script>
+  /**
+   * Le code JavaScript est adapté de l'exemple disponible sur:
+   * https://simonplend.com/how-to-use-fetch-to-post-form-data-as-json-to-your-api/
+   */
+
+  /**
+   * Fonction pour publier des données au format JSON et récupérer la
+   * réponse envoyée par le serveur.
+   *
+   * @param url - URL de la ressource
+   * @param formData - instance de `FormData`
+   * @return {Object} - Réponse envoyée par le serveur
+   */
+  async function postFormDataAsJson(url, formData) {
+    const plainFormData = Object.fromEntries(formData.entries());
+    const formDataJsonString = JSON.stringify(plainFormData);
+
+    console.log(formDataJsonString);
+
+    const fetchOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: formDataJsonString,
+    };
+
+    const response = await fetch(url, fetchOptions);
+
+    if (!response.ok) {
+      const errorMessage = await response.text();
+      throw new Error(errorMessage);
+    }
+
+    return response.json();
+  }
+
+  /**
+   * Gestionnaire d'événements pour un événement de soumission de formulaire.
+   * Sur FormData: https://developer.mozilla.org/fr/docs/Web/API/FormData
+   *
+   * @param {SubmitEvent} événement
+   */
+  async function handleFormSubmit(event) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const url = form.action;
+
+    try {
+      const formData = new FormData(form);
+      const responseData = await postFormDataAsJson(url, formData);
+
+      console.log(responseData);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  const formUser = document.getElementById("form-user");
+  formUser.addEventListener("submit", handleFormSubmit);
+
+</script>
+</body>
+</html>
