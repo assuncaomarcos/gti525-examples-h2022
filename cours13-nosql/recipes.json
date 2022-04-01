@@ -1,0 +1,125 @@
+[{
+    "veg": 0,
+    "name": "Fettucine carbonara",
+    "_id": 1,
+    "ingredients": [
+      {
+        "name": "fettucine",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "beurre",
+        "unit": "g",
+        "quantity": 60
+      },
+      {
+        "name": "bacon",
+        "quantity": 6,
+        "unit": "tranche"
+      },
+      {
+        "name": "ail",
+        "quantity": 1,
+        "unit": "gousse"
+      },
+      {
+        "name": "poivre noir",
+        "unit": "c. à c.",
+        "quantity": 0.5
+      },
+      {
+        "unit": "ml",
+        "quantity": 300,
+        "name": "crème liquide"
+      },
+      {
+        "unit": "un.",
+        "quantity": 2,
+        "name": "oeufs"
+      },
+      {
+        "name": "parmesan râpé",
+        "unit": "g",
+        "quantity": 40
+      },
+      {
+        "unit": "g",
+        "quantity": 40,
+        "name": "pecorino romano"
+      },
+      {
+        "name": "ciboulette hachée",
+        "quantity": 2,
+        "unit": "c. à c."
+      }
+    ],
+    "how_to_make": "Faites cuire les pâtes dans une grande casserole d’eau bouillante, puis égouttez-les. \nPendant ce temps, faites fondre le beurre dans une poêle et faites revenir le bacon 5 minutes.\nAjoutez l’ail, le poivre et la crème liquide dans la poêle. Laissez frémir à découvert jusqu’à ce que la sauce réduise de moitié. Retirez la poêle du feu pour incorporer les oeufs et les fromages.\nMélangez les pâtes avec la sauce. Parsemer de ciboulette avant de servir."
+  },
+  {
+    "name": "Spaghettis au pesto",
+    "_id": 2,
+    "veg": 1,
+    "ingredients": [
+      {
+        "name": "ail",
+        "quantity": 2,
+        "unit": "gousse"
+      },
+      {
+        "unit": "g",
+        "name": "pignons de pin grillé",
+        "quantity": 50
+      },
+      {
+        "quantity": 40,
+        "name": "parmesan râpé",
+        "unit": "g"
+      },
+      {
+        "unit": "botte",
+        "quantity": 4,
+        "name": "basilique"
+      },
+      {
+        "quantity": 125,
+        "name": "huile d'olive",
+        "unit": "ml"
+      },
+      {
+        "name": "spaguetti",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ],
+    "how_to_make": "Pour réaliser le pesto, avec un mixeur ou un robot, mixez l’ail, les pignons, le parmesan râpé et le basilic jusqu’à obtention d’un mélange presque lisse. Versez progressivement l'huile d’olive en filet, en mixant, jusqu’à ce que le mélange ait épaissi.\nFaites cuire les pâtes dans une grande casserole d’eau bouillante, Égouttez-les et réservez 60 ml de l’eau de cuisson.\nMélangez les spaghettis, le pesto et l'eau de cuisson réservée dans un grand saladier."
+  },
+  {
+    "name": "Fettuchine alfredo",
+    "veg": 1,
+    "_id": 3,
+    "ingredients": [
+      {
+        "quantity": 500,
+        "name": "fettucine",
+        "unit": "g"
+      },
+      {
+        "unit": "g",
+        "quantity": 80,
+        "name": "beurre"
+      },
+      {
+        "name": "crème liquide",
+        "quantity": 300,
+        "unit": "ml"
+      },
+      {
+        "unit": "g",
+        "name": "parmesan râpé",
+        "quantity": 40
+      }
+    ],
+    "how_to_make": "Pour réaliser le pesto, avec un mixeur ou un robot, mixez l’ail, les pignons, le parmesan râpé et le basilic jusqu’à obtention d’un mélange presque lisse. Versez progressivement l'huile d’olive en filet, en mixant, jusqu’à ce que le mélange ait épaissi.\nFaites cuire les pâtes dans une grande casserole d’eau bouillante, Égouttez-les et réservez 60 ml de l’eau de cuisson.\nMélangez les spaghettis, le pesto et l'eau de cuisson réservée dans un grand saladier."
+  }
+]
