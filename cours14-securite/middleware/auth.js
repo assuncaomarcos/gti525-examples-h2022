@@ -6,7 +6,7 @@ const verifyToken = (req, res, next) => {
     if (!token) {
         return res.status(403).json({
             status: "erreur",
-            message: "Un jeton d'authentification est nécessaire" + token
+            message: "Un jeton d'authentification est nécessaire"
         });
     }
     try {

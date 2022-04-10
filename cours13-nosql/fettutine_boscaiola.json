@@ -1,0 +1,48 @@
+{
+  "name": "Fettucine boscaiola",
+  "veg": 1,
+  "_id": 4,
+  "ingredients": [
+    {
+      "quantity": 500,
+      "name": "fettucine",
+      "unit": "g"
+    },
+    {
+      "quantity": 2,
+      "name": "huile d'olive",
+      "unit": "c. à c."
+    },
+    {
+      "unit": "g",
+      "quantity": 200,
+      "name": "champignons de Paris émincés"
+    },
+    {
+      "name": "ail",
+      "quantity": 2,
+      "unit": "gousse"
+    },
+    {
+      "unit": "g",
+      "quantity": 200,
+      "name": "jambon blanc grossièrement haché"
+    },
+    {
+      "name": "vin blanc sec",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "crème liquide",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "unit": "c. à s.",
+      "name": "ciboulette fraîche grossièrement hachée",
+      "quantity": 2
+    }
+  ],
+  "how_to_make": "Faites cuire les pâtes dans une grande casserole d’eau bouillante, puis égouttez-les. Pendant ce temps, faites chauffer l’huile d’olive dans une grande sauteuse. Faites revenir les champignons, l’ail et le jambon, en remuant, jusqu’à ce que les ingrédients soient légèrement dorés. Ajoutez le vin et faites bouillir sans couvrir, jusqu’à ce qu’il réduise de moitié. Ajoutez la crème liquide dans la sauteuse et baissez le feu. Laissez mijoter à découvert jusqu’à ce que la sauce épaississe légèrement. Ajoutez la ciboulette et les pâtes. Mélangez et servez."
+}
