@@ -1,5 +1,6 @@
 {
-  "veg": 0,
+  "_id":{"$oid":"6252e72b984c0505f5a304fb"},
+  "veg": false,
   "name": "Fettucine carbonara",
   "ingredients": [
     {
@@ -56,8 +57,9 @@
   "how_to_make": "Faites cuire les pâtes dans une grande casserole d’eau bouillante, puis égouttez-les. \nPendant ce temps, faites fondre le beurre dans une poêle et faites revenir le bacon 5 minutes.\nAjoutez l’ail, le poivre et la crème liquide dans la poêle. Laissez frémir à découvert jusqu’à ce que la sauce réduise de moitié. Retirez la poêle du feu pour incorporer les oeufs et les fromages.\nMélangez les pâtes avec la sauce. Parsemer de ciboulette avant de servir."
 }
 {
+  "_id":{"$oid":"6252e72b984c0505f5a304fa"},
   "name": "Spaghettis au pesto",
-  "veg": 1,
+  "veg": true,
   "ingredients": [
     {
       "name": "ail",
@@ -93,8 +95,9 @@
   "how_to_make": "Pour réaliser le pesto, avec un mixeur ou un robot, mixez l’ail, les pignons, le parmesan râpé et le basilic jusqu’à obtention d’un mélange presque lisse. Versez progressivement l'huile d’olive en filet, en mixant, jusqu’à ce que le mélange ait épaissi.\nFaites cuire les pâtes dans une grande casserole d’eau bouillante, Égouttez-les et réservez 60 ml de l’eau de cuisson.\nMélangez les spaghettis, le pesto et l'eau de cuisson réservée dans un grand saladier."
 }
 {
+  "_id":{"$oid":"6252e72b984c0505f5a304fc"},
   "name": "Fettucine alfredo",
-  "veg": 1,
+  "veg": true,
   "ingredients": [
     {
       "quantity": 500,
@@ -120,8 +123,9 @@
   "how_to_make": "Pour réaliser le pesto, avec un mixeur ou un robot, mixez l’ail, les pignons, le parmesan râpé et le basilic jusqu’à obtention d’un mélange presque lisse. Versez progressivement l'huile d’olive en filet, en mixant, jusqu’à ce que le mélange ait épaissi.\nFaites cuire les pâtes dans une grande casserole d’eau bouillante, Égouttez-les et réservez 60 ml de l’eau de cuisson.\nMélangez les spaghettis, le pesto et l'eau de cuisson réservée dans un grand saladier."
 }
 {
+  "_id":{"$oid":"6252e72b984c0505f5a304fd"},
   "name": "Fettucine boscaiola",
-  "veg": 1,
+  "veg": true,
   "ingredients": [
     {
       "quantity": 500,
